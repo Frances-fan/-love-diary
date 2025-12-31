@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的恋爱日记</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我们的恋爱日记</h1>
+            <div class="love-days">
+                <h2>我们已经相爱 <span id="days">0</span> 天</h2>
+                <p>从 <span id="start-date">2023-01-01</span> 开始</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="add-record">
+                <h3>添加新记录</h3>
+                <form id="record-form">
+                    <textarea id="content" placeholder="写下今天的故事..." required></textarea>
+                    <input type="file" id="image-upload" accept="image/*">
+                    <button type="submit">保存记录</button>
+                </form>
+            </section>
+
+            <section class="records">
+                <h3>回忆录</h3>
+                <div id="records-list">
+                    <!-- 记录将在这里动态显示 -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 我们的恋爱日记 | 仅属于我们两个人的空间</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
